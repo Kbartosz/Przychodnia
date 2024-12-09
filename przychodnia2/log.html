@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie i Rejestracja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sekcja logowania -->
+        <div class="form-container login-container">
+            <form action="login.php" method="POST">
+                <h2>Logowanie</h2>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Hasło" required>
+                <button type="submit">Zaloguj się</button>
+                <p class="toggle-form">
+                    Nie masz konta? <a href="#" id="show-register">Zarejestruj się</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Sekcja rejestracji -->
+        <div class="form-container register-container hidden">
+            <form action="register.php" method="POST">
+                <h2>Rejestracja</h2>
+                <input type="text" name="name" placeholder="Imię " required>
+              <input type="text" name="Nazwi" placeholder="Nazwisko" required>
+              
+              
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Hasło" required>
+                <input type="password" name="confirm-password" placeholder="Potwierdź hasło" required>
+              <input type="password" name="pesel" placeholder="Pesel" required>
+              <input type="text" name="Wiek" placeholder="Wiek" required>
+              
+                <button type="submit">Zarejestruj się</button>
+                <p class="toggle-form">
+                    Masz już konto? <a href="#" id="show-login">Zaloguj się</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
